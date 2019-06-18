@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @add_billing.user %>
+</p>
+
+<p>
+  <strong>Order:</strong>
+  <%= @add_billing.order %>
+</p>
+
+<p>
+  <strong>Phone:</strong>
+  <%= @add_billing.phone %>
+</p>
+
+<p>
+  <strong>Addline1:</strong>
+  <%= @add_billing.addline1 %>
+</p>
+
+<p>
+  <strong>Addline2:</strong>
+  <%= @add_billing.addline2 %>
+</p>
+
+<p>
+  <strong>City:</strong>
+  <%= @add_billing.city %>
+</p>
+
+<p>
+  <strong>Country:</strong>
+  <%= @add_billing.country %>
+</p>
+
+<p>
+  <strong>Zipcode:</strong>
+  <%= @add_billing.zipcode %>
+</p>
+
+<%= link_to 'Edit', edit_add_billing_path(@add_billing) %> |
+<%= link_to 'Back', add_billings_path %>

@@ -1,0 +1,57 @@
+<%= form_with(model: add_billing, local: true) do |form| %>
+  <% if add_billing.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(add_billing.errors.count, "error") %> prohibited this add_billing from being saved:</h2>
+
+      <ul>
+      <% add_billing.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :user_id %>
+    <%= form.text_field :user_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :order_id %>
+    <%= form.text_field :order_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :phone %>
+    <%= form.number_field :phone %>
+  </div>
+
+  <div class="field">
+    <%= form.label :addline1 %>
+    <%= form.text_field :addline1 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :addline2 %>
+    <%= form.text_field :addline2 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :city %>
+    <%= form.text_field :city %>
+  </div>
+
+  <div class="field">
+    <%= form.label :country %>
+    <%= form.text_field :country %>
+  </div>
+
+  <div class="field">
+    <%= form.label :zipcode %>
+    <%= form.number_field :zipcode %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

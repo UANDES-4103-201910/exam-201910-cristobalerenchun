@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @add_shipping.user %>
+</p>
+
+<p>
+  <strong>Order:</strong>
+  <%= @add_shipping.order %>
+</p>
+
+<p>
+  <strong>Phone:</strong>
+  <%= @add_shipping.phone %>
+</p>
+
+<p>
+  <strong>Addline1:</strong>
+  <%= @add_shipping.addline1 %>
+</p>
+
+<p>
+  <strong>Addline2:</strong>
+  <%= @add_shipping.addline2 %>
+</p>
+
+<p>
+  <strong>City:</strong>
+  <%= @add_shipping.city %>
+</p>
+
+<p>
+  <strong>Country:</strong>
+  <%= @add_shipping.country %>
+</p>
+
+<p>
+  <strong>Zipcode:</strong>
+  <%= @add_shipping.zipcode %>
+</p>
+
+<%= link_to 'Edit', edit_add_shipping_path(@add_shipping) %> |
+<%= link_to 'Back', add_shippings_path %>
